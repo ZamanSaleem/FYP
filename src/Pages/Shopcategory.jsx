@@ -1,5 +1,5 @@
 import React from "react";
-import Item from "./Item/";
+import Item from "./Item";
 import { Link } from "react-router-dom";
 import home from "../assets/home.png";
 import { MoveRight } from "lucide-react";
@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 const Shopcategory = (props) => {
   const products = useSelector((state) => state.shop.products);
 
-  // Filter products based on the category
   const filteredProducts = products.filter((item) => item.category === props.category);
 
   return (

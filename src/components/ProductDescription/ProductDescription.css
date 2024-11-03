@@ -1,4 +1,3 @@
-/* From Uiverse.io by andrew-demchenk0 */ 
 .rating:not(:checked) > input {
     position: absolute;
     appearance: none;

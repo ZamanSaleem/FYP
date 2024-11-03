@@ -1,11 +1,11 @@
-import p1_img from "./product_12.jpeg";
-import p2_img from "./product_35.jpeg";
-import p3_img from "./product_14.jpeg";
-import p4_img from "./product_8.jpeg";
-import p5_img from "./product_15.jpeg";
-import p6_img from "./product_2.jpeg";
-import p7_img from "./product_17.jpeg";
-import p8_img from "./product_28.jpeg";
+import p1_img from "./../assets/product_12.jpeg";
+import p2_img from "./../assets/product_35.jpeg";
+import p3_img from "./../assets/product_14.jpeg";
+import p4_img from "./../assets/product_8.jpeg";
+import p5_img from "./../assets/product_15.jpeg";
+import p6_img from "./../assets/product_2.jpeg";
+import p7_img from "./../assets/product_17.jpeg";
+import p8_img from "./../assets/product_28.jpeg";
 
 let new_collections = [
   {

@@ -1,10 +1,21 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import './ProductDescription.css'
+import { addItemToCart } from "../../redux/cartSlice"
+import { useDispatch } from 'react-redux';
 
 
 export const ProductDescription = ({ product }) => {
+
+  const dispatch = useDispatch()
+
+
+  const handleAddToCart = (data) => {
+    dispatch(addItemToCart(data));
+    console.log("added to cart", data);
+  };
   return (
+
     <div className="bg-gray-100 p-6 md:p-12">
       <div className="container mx-auto flex flex-col lg:flex-row space-y-8 lg:space-y-0 lg:space-x-8">
         
@@ -68,7 +79,9 @@ export const ProductDescription = ({ product }) => {
                 ))}
               </div>
             </div>
-            <button className="w-full py-3 bg-[burlywood] hover:bg-black text-white font-semibold rounded-lg transition-colors duration-300">
+            <button 
+            onClick={() => handleAddToCart(product)}
+            className="w-full py-3 bg-[burlywood] hover:bg-black text-white font-semibold rounded-lg transition-colors duration-300">
               Add to Cart
             </button>
             <p className="text-gray-600">
@@ -83,5 +96,3 @@ export const ProductDescription = ({ product }) => {
     </div>
   );
 };
-
-

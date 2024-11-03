@@ -100,12 +100,12 @@ const Shop = () => {
                 >
                   Add To Cart
                 </button>
-                <button
+                {/* <button
                   className="bg-white text-gray-800 py-2 px-4 rounded-lg shadow-md hover:bg-gray-400 transition-colors duration-300"
                   onClick={() => handleMoreInfo}
                 >
                   More Info
-                </button>
+                </button> */}
               </div>
             </motion.div>
           </div>

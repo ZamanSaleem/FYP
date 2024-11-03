@@ -6,7 +6,6 @@ import { MdOutlineShoppingBag } from "react-icons/md";
 import { MdOutlineSearch } from "react-icons/md";
 import { FaUser } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
-
 import { useSelector } from "react-redux";
 function Header() {
   const navigate = useNavigate();
